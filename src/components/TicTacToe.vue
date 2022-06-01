@@ -382,6 +382,14 @@ export default {
           store.togglePlay(true)
         }
       };
+
+
+      const randomSqr = (arr) =>  {
+        let empty = arr.filter(item => item.val == "");
+        let move = empty[Math.floor(Math.random() * empty.length)];
+        move.val = playerPiece.value === 'tac' ? 'tic' : 'tac';;
+      };
+
       const resetGame = async () => {
         store.updateSquares(
           [
@@ -600,6 +608,9 @@ export default {
 // Laptop
 @media (min-width: 768px) {
   #game {
+    h2 {
+      font-size: 32px !important;
+    }
     #tictactoe {
       width: 420px !important;
     }

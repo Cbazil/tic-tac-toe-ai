@@ -1,5 +1,5 @@
 <template>
-  <h1>TicTocToe Game + AI</h1>
+  <h1>TicTacToe Game + AI</h1>
   <TicTacToe />
 </template>
 
@@ -25,7 +25,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 32px !important;
+    font-size: 44px !important;
   }
 }
 </style>
